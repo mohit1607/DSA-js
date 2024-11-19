@@ -1,5 +1,6 @@
 // Time complexity: O(n^2) want to know why then google it
 // its because the iterations are still that much even if you 
+// lesson here to be learned is that the number of loops doesnt decide the time complexity.
 // cleverly managed to do it in one while loop
 // carefully see that start is not incrementing every iteration but only when the end 
 // reaches the start+1. so thats why O(n^2)
