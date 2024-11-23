@@ -10,15 +10,19 @@ const CountSort = (arr) => { // first attempt correct solution
     for (let i = 0; i < arr.length; i++) {
         frequencyArray[arr[i]]++ // index is increased by 1
     }
-    let resultArray = []
+    // let resultArray = []
+    let index = 0
     for (let i = 0; i < frequencyArray.length; i++) {
         if (frequencyArray[i] == 0) continue
         while (frequencyArray[i] != 0) {
-            resultArray.push(i)
+            // resultArray.push(i) // this is auxillary space 
+            arr[index] = i // while this is not using any auxillary space
+            index++
             frequencyArray[i]--
         }
     }
-    return resultArray
+    // return resultArray
+    return arr
 } // but if you want to mimic the hashmap of javascript then you can use the object here in place of hashmap.
 
 
@@ -33,5 +37,5 @@ const maximumInArray = (arr) => {
 }
 
 const array = [3, 2, 5, 5, 2, 5, 0, 3, 4, 6, 7, 4, 8, 7, 8]
-console.log(CountSort(array))
 console.log((array))
+console.log(CountSort(array))
