@@ -7,7 +7,7 @@
 // it covers both recursion and two pointers same time so interview material but the hell I am not stuyding these for interview
 
 
-const QuickSort = (arr) => {
+export const QuickSort = (arr) => {
     sort(arr, 0, arr.length - 1)
     return arr
 }

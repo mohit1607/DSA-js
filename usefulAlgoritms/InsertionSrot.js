@@ -2,7 +2,8 @@
 // first sorted and second unsorted so 
 // index 0 is considered sorted at first and from index 1 to end is unsortd
 // so always pick the first element from the unsorted
-// and see where to insert it in sorter array using a loop and thats it
+// and see where to insert it in sorted array using a loop and thats it
+// 
 
 
 const InsertionSort = (arr) => {
